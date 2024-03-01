@@ -36,3 +36,6 @@ For example, the output `Vector(4, 5)` is descriptive of how the Vector class is
 >> Vector(4, 5)
 ```
 
+## Syntax 
+
+`!r` in the `__repr__` allows `Vector(2, 4)` and `Vector('2', '4')` to be both valid instead of expecting the x, y values to be ints, so the returned string would output the more accurate dtypes of the args
