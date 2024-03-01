@@ -23,7 +23,7 @@ class Vector:
 
 `__repr__` --> provides a helpful, string representation of an object for inspection
 
-For example, the output `Vector(4, 5)` is descriptive of how the Vector class is defined.
+For example, the output `Vector(4, 5)` is descriptive of how the Vector class is defined. This output can also now be used as an input too. Without this custom method, we would see `<Vector object at 0x...>` which isn't helpful or descriptive. 
 
 ```
     def __repr__(self):
