@@ -3,6 +3,8 @@
 ## Concepts & Takeaways
 
 - Leverage built-in dunder methods instead of re-creating the wheel as new methods
+- Abstract Base Classes (ABCs) --> enforces its subclasses to implement specific methods; ensures consistency and reliability of the interface
+- Polymorphism --> provides flexibility and extensibility to parent class methods, thus ensuring interface uniformity
 
 ## Terminology
 - **infix operators** -> create new objs and not touching/modifying the operands
@@ -18,6 +20,9 @@ class Vector:
         y = self.y + other.y
         return Vector(x, y)
 ```
+
+- **Container sequences** -> versatile; can be more memory intensive as it must hold both a ref and the obj in memory, but flexible in that it can hold memory of any dtype
+- **Flat sequences** -> homogenous data (only single dtype allowed); less memory intensive; stores the value of each item 
 
 ## Special methods
 
@@ -39,3 +44,8 @@ For example, the output `Vector(4, 5)` is descriptive of how the Vector class is
 ## Syntax 
 
 `!r` in the `__repr__` allows `Vector(2, 4)` and `Vector('2', '4')` to be both valid instead of expecting the x, y values to be ints, so the returned string would output the more accurate dtypes of the args
+
+## Data Structures
+
+- Dynamic arrays = lists (mutable) 
+- Fixed-size arrays = tuples (immutable)
